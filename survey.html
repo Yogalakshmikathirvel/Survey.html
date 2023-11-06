@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible"
+
+          content="IE=edge">
+
+    <meta name="viewport"
+
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Build a Survey Form using HTML and CSS
+
+    </title>
+
+ 
+
+    <style>
+
+ 
+
+        /* Styling the Body element i.e. Color, 
+
+        Font, Alignment */ 
+
+        body {
+
+            background-color: #05c46b;
+
+            font-family: Verdana;
+
+            text-align: center;
+
+        }
+
+ 
+
+        /* Styling the Form (Color, Padding, Shadow) */
+
+        form {
+
+            background-color: #fff;
+
+            max-width: 500px;
+
+            margin: 50px auto;
+
+            padding: 30px 20px;
+
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+
+        }
+
+ 
+
+        /* Styling form-control Class */
+
+        .form-control {
+
+            text-align: left;
+
+            margin-bottom: 25px;
+
+        }
+
+ 
+
+        /* Styling form-control Label */ 
+
+        .form-control label {
+
+            display: block;
+
+            margin-bottom: 10px;
+
+        }
+
+ 
+
+        /* Styling form-control input, 
+
+        select, textarea */
+
+        .form-control input,
+
+        .form-control select,
+
+        .form-control textarea {
+
+            border: 1px solid #777;
+
+            border-radius: 2px;
+
+            font-family: inherit;
+
+            padding: 10px;
+
+            display: block;
+
+            width: 95%;
+
+        }
+
+ 
+
+        /* Styling form-control Radio 
+
+        button and Checkbox */
+
+        .form-control input[type="radio"],
+
+        .form-control input[type="checkbox"] {
+
+            display: inline-block;
+
+            width: auto;
+
+        }
+
+ 
+
+        /* Styling Button */
+
+        button {
+
+            background-color: #05c46b;
+
+            border: 1px solid #777;
+
+            border-radius: 2px;
+
+            font-family: inherit;
+
+            font-size: 21px;
+
+            display: block;
+
+            width: 100%;
+
+            margin-top: 50px;
+
+            margin-bottom: 20px;
+
+        }
+
+    </style>
+
+</head>
+
+  
+
+<body>
+
+    <h1>GeeksforGeeks Survey Form</h1>
+
+  
+
+    <!-- Create Form -->
+
+    <form id="form">
+
+ 
+
+        <!-- Details -->
+
+        <div class="form-control">
+
+            <label for="name" id="label-name">
+
+                Name
+
+            </label>
+
+ 
+
+            <!-- Input Type Text -->
+
+            <input type="text"
+
+                   id="name"
+
+                   placeholder="Enter your name" />
+
+        </div>
+
+  
+
+        <div class="form-control">
+
+            <label for="email" id="label-email">
+
+                Email
+
+            </label>
+
+ 
+
+            <!-- Input Type Email-->
+
+            <input type="email"
+
+                   id="email"
+
+                   placeholder="Enter your email" />
+
+        </div>
+
+  
+
+        <div class="form-control">
+
+            <label for="age" id="label-age">
+
+                Age
+
+            </label>
+
+ 
+
+            <!-- Input Type Text -->
+
+            <input type="text"
+
+                   id="age"
+
+                   placeholder="Enter your age" />
+
+        </div>
+
+  
+
+        <div class="form-control">
+
+            <label for="role" id="label-role">
+
+                Which option best describes you?
+
+            </label>
+
+             
+
+            <!-- Dropdown options -->
+
+            <select name="role" id="role">
+
+                <option value="student">Student</option>
+
+                <option value="intern">Intern</option>
+
+                <option value="professional">
+
+                    Professional
+
+                </option>
+
+                <option value="other">Other</option>
+
+            </select>
+
+        </div>
+
+  
+
+        <div class="form-control">
+
+            <label>
+
+                Would you recommend GeeksforGeeks 
+
+                to a friend?
+
+            </label>
+
+ 
+
+            <!-- Input Type Radio Button -->
+
+            <label for="recommed-1">
+
+                <input type="radio"
+
+                       id="recommed-1"
+
+                       name="recommed">Yes</input>
+
+            </label>
+
+            <label for="recommed-2">
+
+                <input type="radio"
+
+                       id="recommed-2"
+
+                       name="recommed">No</input>
+
+            </label>
+
+            <label for="recommed-3">
+
+                <input type="radio"
+
+                       id="recommed-3"
+
+                       name="recommed">Maybe</input>
+
+            </label>
+
+        </div>
+
+  
+
+        <div class="form-control">
+
+            <label>Languages and Frameworks known 
+
+                <small>(Check all that apply)</small>
+
+            </label>
+
+            <!-- Input Type Checkbox -->
+
+            <label for="inp-1">
+
+                <input type="checkbox"
+
+                       name="inp">C</input></label>
+
+            <label for="inp-2">
+
+                <input type="checkbox"
+
+                       name="inp">C++</input></label>
+
+            <label for="inp-3">
+
+                <input type="checkbox"
+
+                       name="inp">C#</input></label>
+
+            <label for="inp-4">
+
+                <input type="checkbox"
+
+                       name="inp">Java</input></label>
+
+            <label for="inp-5">
+
+                <input type="checkbox"
+
+                       name="inp">Python</input></label>
+
+            <label for="inp-6">
+
+                <input type="checkbox"
+
+                       name="inp">JavaScript</input></label>
+
+            <label for="inp-7">
+
+                <input type="checkbox"
+
+                       name="inp">React</input></label>
+
+            <label for="inp-7">
+
+                <input type="checkbox"
+
+                       name="inp">Angular</input></label>
+
+            <label for="inp-7">
+
+                <input type="checkbox"
+
+                       name="inp">Django</input></label>
+
+            <label for="inp-7">
+
+                <input type="checkbox"
+
+                       name="inp">Spring</input></label>
+
+        </div>
+
+  
+
+        <div class="form-control">
+
+            <label for="comment">
+
+                Any comments or suggestions
+
+            </label>
+
+ 
+
+            <!-- multi-line text input control -->
+
+            <textarea name="comment" id="comment"
+
+                placeholder="Enter your comment here">
+
+            </textarea>
+
+        </div>
+
+  
+
+        <!-- Multi-line Text Input Control -->
+
+        <button type="submit" value="submit">
+
+            Submit
+
+        </button>
+
+    </form>
+
+</body>
+
+</html>
+
+Outputs:
+
+￼
+
+
+Whether you're preparing for your first job interview or aiming to upskill in this ever-evolving tech landscape, GeeksforGeeks Courses are your key to success. We provide top-quality content at affordable prices, all geared towards accelerating your growth in a time-bound manner. Join the millions we've already empowered, and we're here to do the same for you. Don't miss out - check it out now!
+
+
+Last Updated : 15 May, 2023
+
+69
+
+Similar Reads
+
+￼
+
+Build an E-Commerce Web Application using HTML CSS PHP and hosted using XAMPP
+
+￼
+
+How to build custom form controls using HTML ?
+
+￼
+
+How to return HTML or build HTML using JavaScript ?
+
+￼
+
+Build a Password Generator App with HTML CSS and JavaScript
+
+￼
+
+Build Dark and Light Color using HSL and Calc functions in CSS
+
+￼
+
+How to Build a Card component using Tailwind CSS ?
+
+￼
+
+How to make responsive sliding login and registration form using HTML CSS and JavaScript ?
+
+￼
+
+How to build an HTML table using ReactJS from arrays ?
+
+￼
+
+Simple Contact Form using HTML CSS and PHP
+
+￼
+
+How to add a Login Form to an Image using HTML and CSS ?
+
+Related Tutorials
+
+￼
+
+Onsen UI
+
+￼
+
+React Material UI
+
+￼
+
+NuxtJS
+
+￼
+
+D3.js
+
+￼
+
+Spectre CSS
+
+Previous
+
+Next
+
+Article Contributed By :
+
+￼
+
+imsushant12
+
+imsushant12
+
+Vote for difficulty
+
+Current difficulty : Easy
+
+EasyNormalMediumHardExpert
+
+Improved By :
+
+clintra
+
+sagartomar9927
+
+vishalkumar2204
+
+Article Tags :
+
+CSS-Properties 
+
+CSS-Questions 
+
+HTML-Attributes 
+
+HTML-Questions 
+
+HTML-Tags 
+
+CSS 
+
+HTML 
+
+Web Technologies
+
+Improve Article
+
+Report Issue
+
+Courses
+
+￼
+
+169k+ interested Geeks
+
+Full Stack Development with React & Node JS - Live
+
+Explore
+
+￼
+
+16k+ interested Geeks
+
+Complete Test Series for Service-Based Companies
+
+Explore
+
+￼
+
+38k+ interested Geeks
+
+Master JavaScript - Complete Beginner to Advanced
+
+Explore
+
+￼
+
+A-143, 9th Floor, Sovereign Corporate Tower, Sector-136, Noida, Uttar Pradesh - 201305
+
+feedback@geeksforgeeks.org
+
+￼￼
+
+Company
+
+About Us
+
+Legal
+
+Careers
+
+In Media
+
+Contact Us
+
+Advertise with us
+
+Placement Training Program
+
+Apply for Mentor
+
+Explore
+
+Job-A-Thon Hiring Challenge
+
+Hack-A-Thon
+
+GfG Weekly Contest
+
+Offline Classes (Delhi/NCR)
+
+DSA in JAVA/C++
+
+Master System Design
+
+Master CP
+
+Languages
+
+Python
+
+Java
+
+C++
+
+PHP
+
+GoLang
+
+SQL
+
+R Language
+
+Android Tutorial
+
+DSA Concepts
+
+Data Structures
+
+Arrays
+
+Strings
+
+Linked List
+
+Algorithms
+
+Searching
+
+Sorting
+
+Mathematical
+
+Dynamic Programming
+
+DSA Roadmaps
+
+DSA for Beginners
+
+Basic DSA Coding Problems
+
+DSA Roadmap by Sandeep Jain
+
+DSA with JavaScript
+
+Top 100 DSA Interview Problems
+
+All Cheat Sheets
+
+Web Development
+
+HTML
+
+CSS
+
+JavaScript
+
+Bootstrap
+
+ReactJS
+
+AngularJS
+
+NodeJS
+
+Express.js
+
+Lodash
+
+Computer Science
+
+GATE CS Notes
+
+Operating Systems
+
+Computer Network
+
+Database Management System
+
+Software Engineering
+
+Digital Logic Design
+
+Engineering Maths
+
+Python
+
+Python Programming Examples
+
+Django Tutorial
+
+Python Projects
+
+Python Tkinter
+
+OpenCV Python Tutorial
+
+Python Interview Question
+
+Data Science & ML
+
+Data Science With Python
+
+Data Science For Beginner
+
+Machine Learning Tutorial
+
+Maths For Machine Learning
+
+Pandas Tutorial
+
+NumPy Tutorial
+
+NLP Tutorial
+
+Deep Learning Tutorial
+
+DevOps
+
+Git
+
+AWS
+
+Docker
+
+Kubernetes
+
+Azure
+
+GCP
+
+Competitive Programming
+
+Top DSA for CP
+
+Top 50 Tree Problems
+
+Top 50 Graph Problems
+
+Top 50 Array Problems
+
+Top 50 String Problems
+
+Top 50 DP Problems
+
+Top 15 Websites for CP
+
+System Design
+
+What is System Design
+
+Monolithic and Distributed SD
+
+Scalability in SD
+
+Databases in SD
+
+High Level Design or HLD
+
+Low Level Design or LLD
+
+Top SD Interview Questions
+
+Interview Corner
+
+Company Wise Preparation
+
+Preparation for SDE
+
+Experienced Interviews
+
+Internship Interviews
+
+Competitive Programming
+
+Aptitude Preparation
+
+GfG School
+
+CBSE Notes for Class 8
+
+CBSE Notes for Class 9
+
+CBSE Notes for Class 10
+
+CBSE Notes for Class 11
+
+CBSE Notes for Class 12
+
+English Grammar
+
+Commerce
+
+Accountancy
+
+Business Studies
+
+Economics
+
+Human Resource Management (HRM)
+
+Management
+
+Income Tax
+
+Finance
+
+Statistics for Economics
+
+UPSC
+
+Polity Notes
+
+Geography Notes
+
+History Notes
+
+Science and Technology Notes
+
+Economics Notes
+
+Important Topics in Ethics
+
+UPSC Previous Year Papers
+
+SSC/ BANKING
+
+SSC CGL Syllabus
+
+SBI PO Syllabus
+
+SBI Clerk Syllabus
+
+IBPS PO Syllabus
+
+IBPS Clerk Syllabus
+
+Aptitude Questions
+
+SSC CGL Practice Papers
+
+Write & Earn
+
+Write an Article
+
+Improve an Article
+
+Pick Topics to Write
+
+Write Interview Experience
+
+Internships
+
+@GeeksforGeeks, Sanchhaya Education Private Limited, All rights reserved
+
+We use cookies to ensure you have the best browsing 
+
